@@ -1,0 +1,7 @@
+.list{
+    padding: 15px 25px;
+    background: rgba(17, 19, 23, 0.5);
+    border: 1px solid #4E4E4E;
+    backdrop-filter: blur(2.5px);
+    border-radius: 8px;
+}

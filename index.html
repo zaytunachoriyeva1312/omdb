@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Films</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+</head>
+
+<body class="bg-black">
+    <header class=" bg-black">
+        <div class="mx-auto w-[1200px] text-red-400">
+            <h1 class="font-bold font-serif text-3xl text-center py-4">Films</h2>
+        </div>
+        <hr class="bg-gray-500">
+    </header>
+    <main class=" bg-black h-screen my-4">
+        <div class="mx-auto w-[1200px]">
+            <form id="form" class="my-10">
+                <div class="flex items-center justify-center">
+                    <input class="w-[500px] rounded-sm py-4 px-5 shadow-lg shadow-cyan-500/50 text-3xl" id="search"
+                        type="search" name="search" placeholder="Search">
+                    <button type="submit"
+                        class="bg-blue-400 py-4 w-[200px] px-3 rounded-sm text-3xl font-semibold shadow-lg shadow-cyan-500/50">Send</button>
+                </div>
+            </form>
+            <div>
+                <ul id="item" class="grid grid-cols-3  items-center gap-5">
+
+                </ul>
+            </div>
+        </div>
+        
+    </main>
+    
+    <template id="card">
+        <li class="list w-[380px] h-[700px] mb-10">
+            <img id="poster" src="" alt="" width="300" height="250">
+            <h2 id="title" class="text-white text-center font-bold text-3xl mt-8 mb-10"> </h2>
+        </li>
+    </template>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
